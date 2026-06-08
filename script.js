@@ -1,6 +1,6 @@
 // GANTI 2 BARIS INI PAKE URL + KEY DARI SUPABASE KAMU
-const SUPABASE_URL = 'https://xxxx.supabase.co'
-const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.xxxx'
+const SUPABASE_URL = 'https://hiuccvouljvmjektfihb.supabase.co'
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhpdWNjdm91bGp2bWpla3RmaWhiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODA4MDYzMzYsImV4cCI6MjA5NjM4MjMzNn0.6VYHsF2WyoeNvT1JpZr1OjkfttGJNNp-JuZSe7HKyg8'
 
 const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY)
 const chatBox = document.getElementById('chatBox')
