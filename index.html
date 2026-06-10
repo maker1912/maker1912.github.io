@@ -252,6 +252,9 @@ function render(m){
   const div=document.createElement("div");
   div.className="msg"+(m.flagged?" flagged":"");
 
+  const displayName =
+    '${m.username}@rootakses.my.id';
+
   div.innerHTML=`
     <span class="email">${m.username}@rootakses.my.id</span>
     <span class="arrow"> &gt; </span>
