@@ -1,0 +1,3 @@
+    <p>Join Server Minecraft Maker1912 <a href="#" onclick="navigator.clipboard.writeText('server.rootakses.my.id'); alert('Teks berhasil dicopy!'); return false;">
+server.rootakses.my.id</a>
+. On 24 Jam dan menggunakan Minecraft Bedrock Edition Versi Terbaru (latest)</p>
