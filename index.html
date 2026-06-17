@@ -1,0 +1,175 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* Reset default */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            /* Font khas Windows XP / Era 2000-an awal */
+            font-family: Tahoma, Arial, sans-serif; 
+            background-image: url('image.jpg');
+            background-repeat: no-repeat;  
+            background-size: cover;
+            background-attachment: fixed;
+            color: #000;
+            padding: 10px;
+        }
+
+        /* HEADER: Gaya Klasik Windows Navigasi */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* Gradasi Biru Mengkilap khas Windows XP / Windows Media Player 9 */
+            background: linear-gradient(to bottom, #0058e6 0%, #0036b5 10%, #0051e0 50%, #002e99 100%);
+            padding: 10px 20px;
+            border: 2px solid #002080;
+            border-bottom: 4px solid #001a66;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+
+        header h1 {
+            font-size: 20px;
+            color: #ffffff;
+            text-shadow: 1px 2px 2px #001a66;
+            font-style: italic; /* Tren font miring era 2000-an */
+        }
+
+        /* TOMBOL: Efek Kaca Timbul 3D (Glossy Button) */
+        header button, .side-content button {
+            padding: 6px 15px;
+            background: linear-gradient(to bottom, #ffffff 0%, #e0e0e0 40%, #b3b3b3 50%, #d9d9d9 100%);
+            color: #000;
+            border: 2px solid #707070;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 13px;
+            /* Efek bayangan tombol jadul */
+            box-shadow: inset 1px 1px 0px #fff, 1px 1px 2px rgba(0,0,0,0.5);
+        }
+
+        header button:active, .side-content button:active {
+            background: linear-gradient(to bottom, #d9d9d9 0%, #b3b3b3 50%, #e0e0e0 100%);
+            box-shadow: inset 1px 1px 2px rgba(0,0,0,0.5);
+        }
+
+        /* BANNER TEKS: Kotak Informasi Biru Klasik */
+        .p {
+            font-size: 14px;
+            background-color: #d6e4ff;
+            border: 2px solid #4d88ff;
+            padding: 10px 20px;
+            margin: 15px 0;
+            font-weight: bold;
+            color: #002699;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+        }
+
+        /* KONTEN UTAMA */
+        .a {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        /* IFRAME: Diberi border tebal agar menyatu dengan tema */
+        iframe {
+            border: 4px inset #ccc; /* Border melesak ke dalam khas aplikasi jadul */
+            background-color: #fff;
+            flex: 2;
+            min-width: 320px;
+        }
+
+        /* KOTAK PROJECTS: Desain ala Aplikasi Windows Klasik */
+        .side-content {
+            flex: 1;
+            background-color: #f0f0f0; /* Abu-abu warna komputer tabung */
+            border: 3px outset #fff; /* Border timbul 3D */
+            padding: 20px;
+            min-width: 280px;
+            box-shadow: 3px 3px 10px rgba(0,0,0,0.4);
+        }
+
+        /* Header Box Bergaya Windows Titlebar */
+        .side-content h2 {
+            font-size: 16px;
+            background: linear-gradient(to right, #0058e6, #4d94ff);
+            color: white;
+            padding: 5px 10px;
+            margin: -20px -20px 15px -20px; /* Mentok ke pinggir kotak */
+            border-bottom: 2px solid #003399;
+        }
+
+        /* Garis horizontal jadul berpola putus-putus */
+        hr {
+            border: none;
+            border-top: 2px dashed #999;
+            margin-bottom: 15px;
+        }
+
+        /* LIST PROJECTS */
+        .side-content ul {
+            list-style: none;
+        }
+
+        .side-content li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #ffffff;
+            padding: 8px 12px;
+            border: 1px solid #ababab;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        /* Mengubah tombol di dalam project jadi warna hijau Windows XP (Start Button style) */
+        .side-content button {
+            background: linear-gradient(to bottom, #66e066 0%, #33cc33 40%, #008000 50%, #199e19 100%);
+            color: white;
+            border: 1px solid #004d00;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome To RootAkses</h1>
+        <a href="https://github.com">
+            <button type="button">Github</button>
+        </a>
+    </header>
+
+    <div class="p">
+        <p>RootAkses adalah Website yang dikembangkan oleh maker1912 hanya untuk Bersenang senang.</p>
+    </div>
+
+    <div class="a">
+        <!-- Bagian Iframe (Sisi Kiri) -->
+        <iframe src="https://webchat.quakenet.org/?channels=RootAkses&uio=d4" width="647" height="400"></iframe>
+
+        <!-- Bagian Teks Sisi Kanan -->
+        <div class="side-content">
+            <h2>Projects</h2>
+            <hr>
+            <ul>
+                <li>
+                    <span>I</span>
+                    <a href="https://google.com"><button type="button">GO</button></a>
+                </li>
+				                <li>
+                    <span>RootAkses</span>
+                    <a href="#"><button type="button">GO</button></a>
+                </li>
+				<li>
+				  <span>SlackMC 1.0 (Fork Of NanoMC)</span>
+                    <a href="https://github.com/Maker1912/slackMC"><button type="button">GO</button></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
