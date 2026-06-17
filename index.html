@@ -134,6 +134,21 @@
             color: white;
             border: 1px solid #004d00;
         }
+		
+		    .chat-container {
+        position: relative;
+        width: 100%; /* Mengikuti lebar layar/device */
+        padding-top: 61.8%; /* Rasio tinggi (Anda bisa sesuaikan dengan kebutuhan layar) */
+        overflow: hidden;
+    }
+
+    .chat-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
     </style>
 </head>
 <body>
@@ -149,9 +164,10 @@
     </div>
 
     <div class="a">
+		<div class='chat-container'>
         <!-- Bagian Iframe (Sisi Kiri) -->
-        <iframe src="https://webchat.quakenet.org/?channels=RootAkses&uio=d4" width="647" height="400"></iframe>
-
+        <iframe src="https://webchat.quakenet.org/?channels=RootAkses&uio=d4" frameborder='0'></iframe>
+		</div>
         <!-- Bagian Teks Sisi Kanan -->
         <div class="side-content">
             <h2>Projects</h2>
